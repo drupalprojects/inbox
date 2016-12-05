@@ -49,6 +49,7 @@ dependencies[] = prepopulate
 dependencies[] = menu_attributes
 dependencies[] = special_menu_items
 ; Other
+dependencies[] = navigation404
 dependencies[] = better_formats
 dependencies[] = chosen
 dependencies[] = defaultconfig
@@ -103,19 +104,25 @@ dependencies[] = views_bulk_operations
 dependencies[] = features
 dependencies[] = features_override
 ; ELMSLN Core
+dependencies[] = elmsln_api
 dependencies[] = cis_connector
 dependencies[] = cis_service_connection
 dependencies[] = cis_service_connection_ux
 dependencies[] = cis_service_roles
 dependencies[] = cis_lmsless
+dependencies[] = cis_shortcodes
 dependencies[] = foundation_access_ux
+dependencies[] = elmsln_core
+; ELMSLN Core - Performance
+dependencies[] = elmsln_authcache
+dependencies[] = elmsln_advagg
 
 ; ----------
 ; Service Dependencies
 ; ----------
-;dependencies[] = og
-;dependencies[] = og_ui
-;dependencies[] = cis_section
+dependencies[] = og
+dependencies[] = og_ui
+dependencies[] = cis_section
 
 ; ----------
 ; Authority Dependencies
@@ -126,3 +133,14 @@ dependencies[] = cis_course_authority
 ; END ELMSLN Core Dependencies
 ; ----------
 
+; ----------
+; Inbox Dependencies
+; ----------
+dependencies[] = elmsln_student_filter
+
+dependencies[] = calendar
+dependencies[] = inbox_helper
+dependencies[] = inbox_calendar
+dependencies[] = inbox_event
+dependencies[] = inbox_ux
+dependencies[] = inbox_perms
